@@ -32,8 +32,14 @@
     <style>
         *{padding: 0px;margin: 0px;}
         .body_container{border: 1px red solid;max-width: 700px;background: -webkit-linear-gradient(#EE7942, #FFA07A);background: -o-linear-gradient(#EE7942, #FFA07A);background: -moz-linear-gradient(#EE7942, #FFA07A);background: linear-gradient(#EE7942, #FFA07A);}
-        .body_container .bgimg{background:url("static/images/bg01.png") no-repeat center center;background-size: 100%; }
-        .body_container .question_div{border: 2px red dashed;border-radius: 10px;border-top: none;border-right: none;margin-bottom: 30px;background-color: antiquewhite}
+            .body_container .bgimg{background:url("static/images/bg01.png") no-repeat center center;background-size: 100%; }
+                .body_container .bgimg .bg_title{margin-top: 20px;margin-bottom: 10px;}
+            .body_container .question_div{margin:0px auto;width:90%;border: 2px red dashed;border-radius: 10px;border-top: none;border-right: none;margin-bottom: 30px;background-color: antiquewhite}
+                .body_container .question_div .qt_content_div{margin-top: 20px;text-align: center;}
+                .body_container .question_div .qt_content_div .p_qt_title{}
+                .body_container .question_div .qt_content_div .div_answer1,
+                .body_container .question_div .qt_content_div .div_answer2{margin-bottom:20px;border-radius: 10px;background-color: #FF8C69}
+                .body_container .question_div .qt_content_div .div_answer2{}
     </style>
     <!--[if lt IE 9]>
     <script src="static/js/bootstrap/html5shiv.min.js"></script>
@@ -43,9 +49,15 @@
 <body>
     <div class="container body_container">
         <div class="bgimg">
-            <img src="static/images/bg_title.png" width="100%" height="100%"/>
-            <div class="question_div">
-                <h1>n</h1><h1>n</h1><h1>n</h1><h1>n</h1><h1>n</h1><h1>n</h1>
+            <img src="static/images/bg_title.png" width="100%" height="100%" class="bg_title"/>
+            <div class="row question_div">
+                <div class="qt_content_div">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <p class="p_qt_title">你觉得你瘦吗？</p>
+                        <div class="div_answer1">瘦</div>
+                        <div class="div_answer2">不瘦</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
